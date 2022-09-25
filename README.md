@@ -2,7 +2,7 @@
 This repository contains the code for a client application that connects to a DICT.org server. This project is the first assignment for CPSC 317 Winter 2022 held in UBC.
 
 ## Usage
-The <code>CSDict.jar</code> file is created with the make command. To run the graphical interface you run:
+The <code>CSDict.jar</code> file is created with the make command. 
 ``` shell
 $ make run
 ```
