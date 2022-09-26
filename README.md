@@ -19,7 +19,7 @@ $ make run
 
 
 ## Invalid Numbers
-- [x] 900 Invalid command. This is printed when the command entered by the user is not one of the accepted commands.
+✅ 900 Invalid command. This is printed when the command entered by the user is not one of the accepted commands.
 - [ ] 901 Incorrect number of arguments. This is printed when the command is valid but the wrong number of arguments is provided. Note this could be the case if there are either too many or too few arguments.
 - [ ] 902 Invalid argument. This is printed when the command is valid, and has the proper number of arguments, but one or more the arguments are invalid. For example the second argument of open is a port number so a non-numeric value for the second argument would produce this error.
 - [ ] 903 Supplied command not expected at this time. This is printed when the command is valid, but not allowed at this time. For example, when the client first starts the only commands it can accept are open and quit. If it gets any other known command it would print this message. Note that the printing of this message takes priority over error messages 901 and 902. (i.e. even if errors 901 or 902 occur this message is the only one to print.)
