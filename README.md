@@ -1,11 +1,27 @@
 # Dictionary Client
-This repository contains the code for a client application that connects to a DICT.org server. This project is the first assignment for CPSC 317 Winter 2022 held in UBC.
+This repository contains the code for a client application that connects to a DICT.org server using TCP connection.
 
 ## Usage
 The <code>CSDict.jar</code> file is created with the make command. 
 ``` shell
-$ make run
+make run
 ```
+or 
+``` shell
+make clean
+make 
+java -jar CSdict,jar -d
+```
+[-d] is optional which means debug mode, you don't need to run -d
+
+Connect with the dict.org
+``` shell
+csdict> open dict.org 2628
+```
+Then enjoy the Dictionary server! <br><br>
+
+
+
 | Application Command             | Description | Finished     |
 | ------------------------        | ----------- |:-------------|
 | open SERVER PORT                | Opens a new TCP/IP connection to an dictionary server. The server's name and the port number the server is listening  on are specified by the command's parameters. The server name can be either a domain name or an IP address in dotted form.  Both the SERVER and PORT values must be provided. This command is considered an unexpected command if it is given when a control connection is already open.| :heavy_check_mark:|
